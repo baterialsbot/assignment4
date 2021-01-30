@@ -121,7 +121,7 @@
     
     
     <script >
-        const economyTicket = document.querySelector('.economy-ticket-amount');
+ const economyTicket = document.querySelector('.economy-ticket-amount');
 
 const firstClassTicket = document.querySelector('.first-class-ticket-amount');
 
@@ -169,9 +169,7 @@ function whole() {
     let FirstClassPrice = firstClassTicket.value * 150;
     let EconomyPrice = economyTicket.value * 100;
     let subTotal = (document.querySelector('.subtotal').textContent = FirstClassPrice + EconomyPrice);
- 
     let vat = (document.querySelector('.vat').textContent = Math.round(subTotal * 0.1));
-    
     let total = (document.querySelector('.total').textContent = subTotal + vat);
     
 }
